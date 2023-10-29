@@ -10,7 +10,7 @@ application = flask.Flask(__name__)
 def hello():
     name = flask.request.args.get("name", "World")
     return {
-        'msg': 'Hello, {}!'.format(flask.escape(name))
+        'msg': 'Hello, {}!'.format(name)
     }
 
 

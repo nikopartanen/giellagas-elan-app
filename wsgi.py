@@ -8,7 +8,7 @@ import xml.etree.ElementTree as ET
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'uploads'
-Bootstrap(app)
+#Bootstrap(app)
 
 if not os.path.exists(app.config['UPLOAD_FOLDER']):
     os.makedirs(app.config['UPLOAD_FOLDER'])
